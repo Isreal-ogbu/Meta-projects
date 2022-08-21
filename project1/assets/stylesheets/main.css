@@ -45,6 +45,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* Custom styling */
+
+body {
+  color: #888;
+  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /*
 ........................
 GRID
@@ -98,19 +105,32 @@ h1, h3, h4, h5, p{
   padding: 10px 30px;
 }
 .hero {
+  line-height: 44px;
   padding: 22px 80px 66px 80px;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+.hero p {
+  font-size: 24px;
 }
 /* Primary header to flaot */
 
 .logo {
+
   border-top: 4px solid #648880;
   padding: 40px 0px 22px 0px;
   float: left;
+  font-size: 48px;
+  line-height: 44px;
 }
 .primary-footer small {
   float: left;
 }
 .primary-footer{
+  color: #648880;
+  font-size: 14px;
   padding-top: 44px;
   padding-bottom: 44px;
 }
@@ -131,4 +151,56 @@ h1, h3, h4, h5, p{
 .col-2-3 {
   padding-left: 15px;
   padding-right: 15px;
+}
+h1, h2, h3, h4 {
+  color: #648880;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2{
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+}
+strong {
+  font-weight: 400;
+}
+
+cite {
+  font-style: italic;
+}
+/* limks */
+
+a:hover {
+  color: #a9b2b9;
+}
+a {
+  color: #648880;
+}
+.tag-line {
+  margin: 66px 0px 22px 0px;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+}
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
 }
