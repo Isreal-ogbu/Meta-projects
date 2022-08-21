@@ -50,11 +50,30 @@ table {
 GRID
 ........................
 */
-*, *::before, *::after {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+/*
+Clearfix : FOR CONTAINING ELEMENT instead of using float and clear
+*/
+
+.group:before, 
+.group:after{
+  content: "";
+  display: table;
+}
+
+.group:after{
+  clear: both;
+}
+
+.group {
+  clear: both;
+  *zoom : 1;
+}
+
 .containers{
   width: 960;
   padding-left: 30px;
@@ -76,4 +95,18 @@ h1, h3, h4, h5, p{
 }
 .hero {
   padding: 22px 80px 66px 80px;
+}
+/* Primary header to flaot */
+
+.logo {
+  border-top: 4px solid #648880;
+  padding: 40px 0px 22px 0px;
+  float: left;
+}
+.primary-footer small {
+  float: left;
+}
+.primary-footer{
+  padding-top: 44px;
+  padding-bottom: 44px;
 }
